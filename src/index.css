@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.input-general {
+  @apply w-full bg-white placeholder:text-slate-400 text-slate-700 text-lg border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease-in-out focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow;
+}
+
+@layer components {
+  .label-general {
+    @apply text-3xl sm:text-sm md:text-xs;
+  }
+
+  .label-error {
+    @apply text-red-600 font-medium text-sm;
+  }
+
+  .label-disabled {
+    @apply text-gray-400 font-medium text-sm;
+  }
+}
+
+/* For Webkit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 0; /* Hides the vertical scrollbar */
+  height: 0; /* Hides the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Optional: Ensures the track is also invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Optional: Ensures the thumb is invisible */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none; /* Hides the scrollbar */
+  scrollbar-color: transparent transparent; /* Ensures both the thumb and track are invisible */
+}
+
+/* Apply overflow properties globally */
+html,
+body {
+  overflow-y: auto; /* Enable vertical scrolling on the body */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.carousel-container {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.carousel-content {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-content img {
+  margin-right: 16px;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* For Firefox */
+.thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.color-circle {
+  width: 2.5rem; /* Adjust width as needed */
+  height: 2.5rem; /* Adjust height as needed */
+  padding: 0;
+  border: 0.5px solid rgba(0, 0, 0, 0.1); /* Very thin, light border */
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer;
+  -webkit-appearance: none; /* Remove default styling on WebKit browsers */
+  -moz-appearance: none; /* Remove default styling on Mozilla browsers */
+  appearance: none; /* Standard appearance property */
+  overflow: hidden;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15); /* Soft shadow for subtle definition */
+}
+
+/* Additional styling for the color input */
+.color-circle::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+}
+
+.color-circle::-moz-color-swatch {
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+}
+
+.icon-link .icon-path {
+  fill: #a5aab4;
+  transition: fill 0.2s ease;
+}
+
+.icon-link:hover .icon-path {
+  fill: #5bbe6c;
+}
+
+.icon-stroke-link .icon-stroke-path {
+  stroke: #a5aab4; /* Initial stroke color */
+  transition: stroke 0.2s ease;
+}
+
+.icon-stroke-link:hover .icon-stroke-path {
+  stroke: #5bbe6c; /* Hover stroke color */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@layer utilities {
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.5s ease-in forwards;
+  }
+}
