@@ -76,18 +76,19 @@ The production-ready files will be generated in the `dist` folder.
 
 ```plaintext
 src/
-|-- assets/           # Static assets like images, fonts
-|-- components/       # Reusable UI components
-|-- pages/            # Application pages
-|-- styles/           # Custom Tailwind or global CSS
-|-- utils/            # Pre-built utilities for common tasks
-|-- services/         # API calls and external service integrations
-|-- router/           # Application routing setup using React Router
-|-- models/           # TypeScript interfaces and types for the application
-|-- context/          # React Context for managing global state
-|-- config/           # Configuration files like environment variables
-|-- hooks/            # Custom React hooks for encapsulating logic
-|-- layouts/          # Layout components to structure pages (e.g., headers, footers)
+|-- app/ 
+   |-- assets/           # Static assets like images, fonts
+   |-- components/       # Reusable UI components
+   |-- pages/            # Application pages
+   |-- styles/           # Custom Tailwind or global CSS
+   |-- utils/            # Pre-built utilities for common tasks
+   |-- services/         # API calls and external service integrations
+   |-- router/           # Application routing setup using React Router
+   |-- models/           # TypeScript interfaces and types for the application
+   |-- context/          # React Context for managing global state
+   |-- config/           # Configuration files like environment variables
+   |-- hooks/            # Custom React hooks for encapsulating logic
+   |-- layouts/          # Layout components to structure pages (e.g., headers, footers)
 |-- main.tsx          # Entry point of the application
 ```
 
