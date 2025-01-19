@@ -1,5 +1,9 @@
 {
-  "name": "skultrack-app",
+  "name": "react-template-app",
+  "author": {
+    "name": "Kent Gabriel A Nuite (K G A N)",
+    "email": "kent.gabriel.alba.nuite@gmail.com"
+  },
   "private": true,
   "version": "1.0.0",
   "type": "module",

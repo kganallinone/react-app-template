@@ -1,7 +1,6 @@
 import { createContext, useState, ReactNode, useEffect } from "react";
 import { User } from "../models/userModels";
 import { UserService } from "../services/userService";
-import { CONNECTION } from "../config/config";
 
 interface AuthContextType {
   user: User | null;
@@ -37,14 +36,6 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     } else {
       (async () => {
         try {
-          const response = await userService.login({
-            email: CONNECTION.APP,
-          });
-
-          const { token: newToken } = response;
-
-          if (newToken) {
-          }
         } catch (error) {
           console.error("Error during service account login:", error);
         } finally {

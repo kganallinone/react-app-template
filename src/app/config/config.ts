@@ -2,20 +2,8 @@ import { FaCreditCard, FaFileAlt } from "react-icons/fa";
 // import PISARA_LOGO from "../../assets/pisara-logo.png";
 import { FaCheck, FaEye } from "react-icons/fa6";
 
-export const CONNECTION = {
-  APP_SERVICE_ACCOUNT: "kadiwa-service-account@pisara.com",
-  APP: "6728897b2df36af73473ed58",
-  PRODUCTS: "67286eb0bfcbc1d8f097792c",
-  STORES: "6735089a772c67e2df99be8a",
-  USERS: "6735115efcafa3979326e408",
-  VERSION: "6734431c2014db8a9a7c73d4",
-  APP_CODE_ACCESS: ["kadiwa"],
-  POS_CODE_ACCESS: ["kadiwa", "pos"],
-  HUB_CODE_ACCESS: ["kadiwa", "hub"],
-};
-
 export const WEBAPP = {
-  NAME: "PISARA | Event",
+  NAME: "SAMPLE",
   LOGO: "/pisara-logo.png",
   DESCRIPTION:
     "Our Event Management System is designed to simplify the organization, tracking, and management of events, providing both organizers and attendees with a seamless and efficient experience.",
@@ -41,33 +29,19 @@ export const BRANDING = {
 };
 
 export const CLOUDINARY = {
-  CLOUD_NAME: "pisara-dev",
-  UPLOAD_PRESET_UNASIGNED: "pisara-dev",
-  DEFAULT_FOLDER: "pisara-app/",
+  CLOUD_NAME: "sample-dev",
+  UPLOAD_PRESET_UNASIGNED: "sample-dev",
+  DEFAULT_FOLDER: "sample-app/",
   API_KEY: "166187199846281",
   API_SECRET: "RMUJDULoCJ31xmIxvB5POe5641M",
   IMAGE_UPLOAD_ENDPOINT:
-    "https://api.cloudinary.com/v1_1/pisara-dev/image/upload",
+    "https://api.cloudinary.com/v1_1/sample-dev/image/upload",
   IMAGE_DESTROY_ENDPOINT:
-    "https://api.cloudinary.com/v1_1/pisara-dev/image/destroy",
+    "https://api.cloudinary.com/v1_1/sample-dev/image/destroy",
   FOLDER_PATH: {
     PROJECT_BASE: "projects/:currentProjectId/images",
     PROJECT_BG: "projects/:currentProjectId/images/background",
     PROJECT_LOGO: "projects/:currentProjectId/images/logo",
-    EVENT_DRAFT_COVER_PHOTO:
-      "projects/:currentProjectId/images/events/draft/cover-photo",
-    EVENT_COVER_PHOTO:
-      "projects/:currentProjectId/images/events/:currentItemId/cover-photo",
-    ATTENDANCE:
-      "projects/:currentProjectId/images/events/:currentItemId/attendances/:attendeeId",
-    CERTIFICATE_BG:
-      "projects/:currentProjectId/images/events/:currentItemId/certificates/:certificateId/background",
-    CERTIFICATE_LEFT_LOGO:
-      "projects/:currentProjectId/images/events/:currentItemId/certificates/:certificateId/left-logo",
-    CERTIFICATE_RIGHT_LOGO:
-      "projects/:currentProjectId/images/events/:currentItemId/certificates/:certificateId/right-logo",
-    CERTIFICATE_SIGNATURE:
-      "projects/:currentProjectId/images/events/:currentItemId/certificates/:certificateId/signature",
   },
 };
 
