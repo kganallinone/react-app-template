@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { IconType } from "react-icons/lib";
@@ -9,7 +8,7 @@ interface SocialMediaButtonProps {
   icon: IconType; // URL or icon class for the platform
 }
 
-const SocialMediaButtons: React.FC = () => {
+const SocialMediaButtons = () => {
   const socialLinks: SocialMediaButtonProps[] = [
     {
       platform: "Facebook",
