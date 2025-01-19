@@ -121,7 +121,7 @@ type User = {
   name: string;
 };
 
-const WelcomeMessage: React.FC<{ user: User }> = ({ user }) => {
+const WelcomeMessage = ({ user } : { user: User }) => {
   return <div>Welcome, {user.name}!</div>;
 };
 ```
